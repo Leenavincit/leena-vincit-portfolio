@@ -109,11 +109,61 @@ export const education = [
   { degree: "B.Sc. Computer Science", school: "Apollo Arts and Science College", period: "2020 – 2023" },
 ];
 
-export const certifications = [
-  { title: "Python Programming Certificate", desc: "Fundamentals through advanced Python, OOP and problem solving." },
-  { title: "SQL Training Certificate", desc: "Relational databases, joins, subqueries and query optimisation." },
-  { title: "Python Internship Certificate", desc: "Awarded on completion of the CodTech IT Solutions internship." },
-  { title: "AI & ML in Computer Science — Book Chapter", desc: "Published book chapter on Artificial Intelligence and Machine Learning in Computer Science." },
+export type Certification = {
+  title: string;
+  issuer: string;
+  issueDate?: string;
+  credentialId?: string;
+  description: string;
+  badges: string[];
+  buttonLabel: string;
+  category?: string;
+  publication?: string;
+  institution?: string;
+  certificateUrl?: string;
+};
+
+export const certifications: Certification[] = [
+  {
+    title: "Python Programming Certificate",
+    issuer: "Besant Technologies, Chennai",
+    issueDate: "21 December 2023",
+    credentialId: "BDZ-85103",
+    description:
+      "Successfully completed comprehensive Python Programming training covering Python fundamentals, Object-Oriented Programming (OOP), problem solving, and practical programming concepts.",
+    badges: ["Verified", "Besant Technologies"],
+    buttonLabel: "View Certificate",
+  },
+  {
+    title: "SQL Training Certificate",
+    issuer: "Besant Technologies, Chennai",
+    issueDate: "21 December 2023",
+    credentialId: "BDZ-85103",
+    description:
+      "Successfully completed SQL Training covering relational databases, SQL queries, joins, subqueries, normalization, and database optimization.",
+    badges: ["Verified", "Besant Technologies"],
+    buttonLabel: "View Certificate",
+  },
+  {
+    title: "Python Programming Internship Certificate",
+    issuer: "CodTech IT Solutions Pvt. Ltd.",
+    description:
+      "Completed a Python Programming Internship focusing on Python development, Object-Oriented Programming, debugging, and practical software development assignments.",
+    badges: ["Internship", "Completion", "CodTech"],
+    buttonLabel: "View Certificate",
+  },
+  {
+    title: "Artificial Intelligence and Machine Learning in Computer Science",
+    issuer: "Beyond Line Publisher",
+    category: "Book Chapter Publication",
+    institution: "St. Joseph's College (Arts & Science), Chennai",
+    publication:
+      "Emerging Innovations and Applications in Computer Science, Statistics and Data Science",
+    description:
+      "Published a research book chapter on Artificial Intelligence and Machine Learning in Computer Science as part of an academic publication.",
+    badges: ["Publication", "Published Author", "Beyond Line Publisher"],
+    buttonLabel: "View Publication",
+  },
 ];
 
 export const achievements = [

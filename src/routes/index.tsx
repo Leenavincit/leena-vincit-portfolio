@@ -1,24 +1,58 @@
 import { createFileRoute } from "@tanstack/react-router";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Skills from "@/components/Skills";
+import Projects from "@/components/Projects";
+import Experience from "@/components/Experience";
+import Education from "@/components/Education";
+import Certifications from "@/components/Certifications";
+import Achievements from "@/components/Achievements";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
+import ScrollProgress from "@/components/ScrollProgress";
+import ScrollToTop from "@/components/ScrollToTop";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
 export const Route = createFileRoute("/")({
-  component: Index,
+  head: () => ({
+    meta: [
+      { title: "Leena Vincit — Software Developer & Data Analyst" },
+      {
+        name: "description",
+        content:
+          "Portfolio of Leena Vincit, an M.Sc. Computer Science graduate specialising in full-stack development with Python, PHP, SQL and interactive Tableau dashboards.",
+      },
+      { property: "og:title", content: "Leena Vincit — Software Developer & Data Analyst" },
+      {
+        property: "og:description",
+        content:
+          "Full-stack developer and data analyst building scalable web apps and interactive dashboards.",
+      },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
+  component: Portfolio,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
-function Index() {
+function Portfolio() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="relative min-h-screen">
+      <ScrollProgress />
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Experience />
+        <Education />
+        <Certifications />
+        <Achievements />
+        <Contact />
+      </main>
+      <Footer />
+      <ScrollToTop />
     </div>
   );
 }

@@ -143,7 +143,7 @@ export default function Hero() {
         >
           <div className="relative">
             <div className="absolute -inset-6 rounded-full bg-gradient-to-tr from-gold via-purple to-gold blur-2xl opacity-60 animate-glow-pulse" />
-            <div className="relative h-64 w-64 sm:h-80 sm:w-80 rounded-full p-1 bg-gradient-to-tr from-gold via-purple-soft to-gold animate-[spin_16s_linear_infinite]">
+            <div className="relative h-64 w-64 sm:h-80 sm:w-80 rounded-full p-1 bg-gradient-to-tr from-gold via-purple-soft to-gold">
               <div className="h-full w-full rounded-full bg-background p-2">
                 <img
                   src={portrait.url}

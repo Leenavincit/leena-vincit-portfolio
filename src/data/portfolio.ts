@@ -1,10 +1,18 @@
 import {
-  SiPython, SiPhp, SiJavascript, SiMysql, SiHtml5, SiCss3, SiTableau,
-  SiGit, SiGithub, SiVisualstudiocode, SiXampp,
+  SiPython, SiPhp, SiJavascript, SiMysql, SiHtml5, SiCss,
+  SiGit, SiGithub, SiXampp,
 } from "react-icons/si";
-import { TbSql, TbBrandCSharp } from "react-icons/tb";
-import { PiMicrosoftExcelLogoFill, PiChartBar, PiGauge, PiBriefcase } from "react-icons/pi";
+import { TbSql, TbBrandVscode } from "react-icons/tb";
+import { FaChartBar, FaFileExcel, FaTachometerAlt, FaBriefcase, FaChartLine } from "react-icons/fa";
 import type { IconType } from "react-icons";
+
+const SiCss3 = SiCss;
+const SiTableau = FaChartLine;
+const SiVisualstudiocode = TbBrandVscode;
+const PiMicrosoftExcelLogoFill = FaFileExcel;
+const PiChartBar = FaChartBar;
+const PiGauge = FaTachometerAlt;
+const PiBriefcase = FaBriefcase;
 
 export type SkillGroup = { title: string; items: { name: string; icon: IconType; level: number }[] };
 

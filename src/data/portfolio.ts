@@ -42,10 +42,10 @@ export const skillGroups: SkillGroup[] = [
     items: [
       { name: "Tableau", icon: SiTableau, level: 85 },
       { name: "Microsoft Excel", icon: PiMicrosoftExcelLogoFill, level: 80 },
-      { name: "SQL", icon: TbSql, level: 85 },
+      { name: "Business Intelligence", icon: PiBriefcase, level: 78 },
       { name: "Data Visualization", icon: PiChartBar, level: 82 },
       { name: "Dashboard Development", icon: PiGauge, level: 80 },
-      { name: "Business Intelligence", icon: PiBriefcase, level: 78 },
+      { name: "KPI Reporting", icon: FaChartLine, level: 80 },
     ],
   },
   {

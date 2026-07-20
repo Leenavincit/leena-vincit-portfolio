@@ -39,11 +39,24 @@ function Card({ p }: { p: Project }) {
             </span>
           ))}
         </div>
+        {p.features?.length > 0 && (
+          <div className="mt-4">
+            <h4 className="text-xs font-semibold uppercase tracking-wider text-gold">Features</h4>
+            <ul className="mt-2 grid grid-cols-1 gap-1 sm:grid-cols-2">
+              {p.features.map((f) => (
+                <li key={f} className="flex items-start gap-2 text-xs text-muted-foreground">
+                  <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-gradient-to-r from-gold to-purple" />
+                  <span>{f}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
         <div className="mt-5 flex flex-wrap gap-2">
           <a
             href={p.github}
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-lg bg-white/5 px-3 py-2 text-xs font-semibold text-foreground hover:bg-white/10"
           >
             <FaGithub /> GitHub
@@ -52,7 +65,7 @@ function Card({ p }: { p: Project }) {
             <a
               href={p.demo}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-gold to-gold-soft px-3 py-2 text-xs font-semibold text-primary-foreground"
             >
               <FaExternalLinkAlt /> {p.category === "Data" ? "Dashboard Preview" : "Live Demo"}

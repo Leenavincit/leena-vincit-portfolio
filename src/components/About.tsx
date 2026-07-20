@@ -35,16 +35,16 @@ export default function About() {
           className="glass rounded-3xl p-8 sm:p-10"
         >
           <p className="text-base sm:text-lg leading-relaxed text-muted-foreground">
-            I am an <span className="text-foreground font-semibold">M.Sc. Computer Science</span>{" "}
-            graduate with practical experience in full-stack web development and data analytics. I
-            enjoy building web applications, developing interactive dashboards, and solving
-            real-world problems through technology.
+            I am an <span className="text-foreground font-semibold">aspiring Software Developer and Data Analyst</span>{" "}
+            with a strong foundation in web development, database management, and business
+            intelligence. I enjoy building user-friendly applications and transforming raw data
+            into meaningful insights through interactive dashboards.
           </p>
           <p className="mt-4 text-base sm:text-lg leading-relaxed text-muted-foreground">
-            I am passionate about continuous learning, software engineering and business
-            intelligence, and I am actively seeking opportunities as a{" "}
-            <span className="text-gold font-semibold">Software Developer</span> or{" "}
-            <span className="text-purple-soft font-semibold">Data Analyst</span>.
+            I am passionate about <span className="text-gold font-semibold">continuous learning</span>,{" "}
+            <span className="text-purple-soft font-semibold">problem-solving</span>, and creating
+            technology-driven solutions that improve user experience and support better business
+            decisions.
           </p>
         </motion.div>
 

@@ -232,10 +232,11 @@ export default function Hero() {
           </div>
 
           <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-            Passionate about developing scalable web applications and transforming raw data into
-            meaningful business insights. Skilled in Python, PHP, SQL, Tableau, HTML, CSS,
-            JavaScript, MySQL, Git and GitHub. I enjoy building practical software solutions and
-            creating interactive dashboards for data-driven decision making.
+            Aspiring Software Developer and Data Analyst with hands-on experience in Python, PHP,
+            SQL, JavaScript, HTML5, CSS3, MySQL, Tableau, Microsoft Excel, Git, and GitHub.
+            Passionate about developing scalable web applications and interactive Business
+            Intelligence dashboards while solving real-world problems through technology and
+            data-driven decision-making.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-3">
@@ -247,11 +248,12 @@ export default function Hero() {
               <FaArrowDown className="transition-transform group-hover:translate-y-0.5" />
             </a>
             <a
-              href="/resume.pdf"
-              download
-              className="inline-flex items-center gap-2 rounded-xl glass px-5 py-3 text-sm font-semibold text-foreground transition hover:-translate-y-0.5"
+              href="/Leena%20Vincit%20Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-2 rounded-xl glass px-5 py-3 text-sm font-semibold text-foreground transition hover:-translate-y-0.5 hover:text-gold hover:glow-gold"
             >
-              <HiDownload /> Download Resume
+              <HiDownload className="transition-transform group-hover:translate-y-0.5" /> Download Resume
             </a>
           </div>
 
@@ -265,7 +267,7 @@ export default function Hero() {
                 key={label}
                 href={href}
                 target={href.startsWith("http") ? "_blank" : undefined}
-                rel="noreferrer"
+                rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
                 aria-label={label}
                 className="grid h-11 w-11 place-items-center rounded-xl glass text-muted-foreground transition hover:text-gold hover:-translate-y-0.5 hover:glow-gold"
               >

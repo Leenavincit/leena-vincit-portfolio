@@ -42,10 +42,10 @@ export const skillGroups: SkillGroup[] = [
     items: [
       { name: "Tableau", icon: SiTableau, level: 85 },
       { name: "Microsoft Excel", icon: PiMicrosoftExcelLogoFill, level: 80 },
-      { name: "SQL", icon: TbSql, level: 85 },
+      { name: "Business Intelligence", icon: PiBriefcase, level: 78 },
       { name: "Data Visualization", icon: PiChartBar, level: 82 },
       { name: "Dashboard Development", icon: PiGauge, level: 80 },
-      { name: "Business Intelligence", icon: PiBriefcase, level: 78 },
+      { name: "KPI Reporting", icon: FaChartLine, level: 80 },
     ],
   },
   {
@@ -63,6 +63,7 @@ export type Project = {
   title: string;
   description: string;
   tech: string[];
+  features: string[];
   github: string;
   demo?: string;
   category: "Web" | "Data";
@@ -73,8 +74,17 @@ export const projects: Project[] = [
   {
     title: "College Placement Management System",
     description:
-      "Full-stack web application to automate campus recruitment. Includes Admin, Student and Company modules with secure authentication, job postings, application tracking, resume uploads, interview scheduling and placement management.",
+      "Web-based Placement Management System that automates campus recruitment by enabling students to apply for jobs, companies to manage applicants, and administrators to oversee the complete placement process.",
     tech: ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
+    features: [
+      "Student Module",
+      "Company Module",
+      "Admin Module",
+      "Job Posting",
+      "Application Tracking",
+      "Interview Call Letter Management",
+      "Reports",
+    ],
     github: "https://github.com/Leenavincit/College-Placement-Management",
     category: "Web",
     gradient: "from-amber-400/30 via-orange-500/20 to-purple-500/30",
@@ -82,8 +92,16 @@ export const projects: Project[] = [
   {
     title: "Sales Performance Dashboard",
     description:
-      "Interactive Tableau dashboard analyzing sales performance, profit trends, regional analysis, category insights and business KPIs through rich interactive visualizations.",
+      "Interactive Sales Performance Dashboard built with Tableau, SQL, and Microsoft Excel to analyze sales, profit, regional performance, category-wise trends, and KPIs for business decision-making.",
     tech: ["Tableau", "SQL", "Microsoft Excel"],
+    features: [
+      "KPI Cards",
+      "Sales Analysis",
+      "Profit Analysis",
+      "Regional Analysis",
+      "Category Analysis",
+      "Interactive Filters",
+    ],
     github: "https://github.com/Leenavincit/Sales-Performance-Dashboard",
     category: "Data",
     gradient: "from-purple-500/30 via-fuchsia-500/20 to-amber-400/30",

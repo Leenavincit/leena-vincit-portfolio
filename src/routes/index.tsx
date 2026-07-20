@@ -16,17 +16,17 @@ import ScrollToTop from "@/components/ScrollToTop";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Leena Vincit — Software Developer & Data Analyst" },
+      { title: "Leena Vincit | Software Developer | Data Analyst" },
       {
         name: "description",
         content:
-          "Portfolio of Leena Vincit, an M.Sc. Computer Science graduate specialising in full-stack development with Python, PHP, SQL and interactive Tableau dashboards.",
+          "Portfolio of Leena Vincit showcasing software development projects, Tableau dashboards, SQL, Python, PHP, Business Intelligence, and Data Analytics.",
       },
-      { property: "og:title", content: "Leena Vincit — Software Developer & Data Analyst" },
+      { property: "og:title", content: "Leena Vincit | Software Developer | Data Analyst" },
       {
         property: "og:description",
         content:
-          "Full-stack developer and data analyst building scalable web apps and interactive dashboards.",
+          "Portfolio of Leena Vincit showcasing software development projects, Tableau dashboards, SQL, Python, PHP, Business Intelligence, and Data Analytics.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

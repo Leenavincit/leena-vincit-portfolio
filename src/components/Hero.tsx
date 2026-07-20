@@ -251,7 +251,6 @@ export default function Hero() {
               href="/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              download
               className="group inline-flex items-center gap-2 rounded-xl glass px-5 py-3 text-sm font-semibold text-foreground transition hover:-translate-y-0.5 hover:text-gold hover:glow-gold"
             >
               <HiDownload className="transition-transform group-hover:translate-y-0.5" /> Download Resume

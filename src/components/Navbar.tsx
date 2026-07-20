@@ -66,7 +66,6 @@ export default function Navbar() {
             href="/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            download
             className="hidden sm:inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-gold to-gold-soft px-4 py-2 text-sm font-semibold text-primary-foreground shadow-lg shadow-amber-500/20 transition hover:shadow-amber-500/40 hover:-translate-y-0.5"
           >
             <HiDownload className="text-base" />
@@ -107,7 +106,6 @@ export default function Navbar() {
                   href="/resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  download
                   className="flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-gold to-gold-soft px-4 py-2.5 text-sm font-semibold text-primary-foreground"
                 >
                   <HiDownload /> Download Resume

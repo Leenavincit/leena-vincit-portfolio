@@ -19,7 +19,7 @@ export default function Footer() {
               key={label}
               href={href}
               target={href.startsWith("http") ? "_blank" : undefined}
-              rel="noreferrer"
+              rel="noopener noreferrer"
               aria-label={label}
               className="grid h-10 w-10 place-items-center rounded-xl glass text-muted-foreground hover:text-gold transition"
             >

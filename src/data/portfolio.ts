@@ -63,6 +63,7 @@ export type Project = {
   title: string;
   description: string;
   tech: string[];
+  features: string[];
   github: string;
   demo?: string;
   category: "Web" | "Data";

@@ -66,7 +66,7 @@ export default function Contact() {
               </a>
             </li>
             <li>
-              <a href={contact.github} target="_blank" rel="noreferrer" className="flex items-center gap-4 rounded-xl p-3 hover:bg-white/5 transition">
+              <a href={contact.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 rounded-xl p-3 hover:bg-white/5 transition">
                 <span className="grid h-11 w-11 place-items-center rounded-xl bg-gradient-to-br from-gold to-purple text-primary-foreground">
                   <FaGithub />
                 </span>
